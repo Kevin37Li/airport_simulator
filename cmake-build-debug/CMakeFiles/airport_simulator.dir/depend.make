@@ -3,3 +3,6 @@
 
 CMakeFiles/airport_simulator.dir/main.cpp.obj: ../main.cpp
 
+CMakeFiles/airport_simulator.dir/queue.cpp.obj: ../queue.cpp
+CMakeFiles/airport_simulator.dir/queue.cpp.obj: ../queue.h
+

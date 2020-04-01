@@ -3,4 +3,4 @@ project(airport_simulator)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(airport_simulator main.cpp)
+add_executable(airport_simulator main.cpp Queue.cpp Queue.h)

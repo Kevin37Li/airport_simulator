@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/airport_simulator.dir/main.cpp.obj"
+  "CMakeFiles/airport_simulator.dir/queue.cpp.obj"
   "airport_simulator.exe"
   "airport_simulator.exe.manifest"
   "airport_simulator.pdb"
