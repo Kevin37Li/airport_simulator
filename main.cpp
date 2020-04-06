@@ -1,7 +1,9 @@
 #include <iostream>
 #include "Queue.h"
+#include "Queue.cpp"
 #include "boolSource.h"
 #include "averager.h"
+#include "runway.h"
 
 using namespace std;
 
@@ -10,12 +12,13 @@ bool isPlaneCrashed(unsigned int timeEnteringQueue, unsigned int timeToLand,
 
 int main() {
 
+    cout << "-----------------------------------INPUT-----------------------------------------" << endl;
     cout << "The amount of time needed for one plane to land: ";
-    double landingTime;
+    unsigned int landingTime;
     cin >> landingTime;
 
     cout << "The amount of time need for one plane to take off: ";
-    double takeoffTime;
+    unsigned int takeoffTime;
     cin >> takeoffTime;
 
     cout << "The average amount of time between arrival of planes to the landing queue: ";
@@ -44,6 +47,9 @@ int main() {
     averager landingPlanes;
     averager takeoffPlanes;
 
+    runway runwayForLanding(landingTime);
+    runway runwayForTakeoff(takeoffTime);
+
     size_t planesCrashed = 0;
 
     for(unsigned int i = 1; i <= timeTotal; i++)
@@ -64,12 +70,47 @@ int main() {
             planesCrashed++;
         }
 
+        if(!runwayForLanding.is_busy() && !runwayForTakeoff.is_busy() && !landingQueue.empty())
+        {
+            unsigned int next = landingQueue.front();
+            landingQueue.pop();
+            landingPlanes.next_number(i-next);
+
+            runwayForLanding.start_using();
+        }
+
         if(!landingQueue.empty())
         {
-
+            runwayForLanding.one_minute();
+            runwayForTakeoff.one_minute();
+            continue;
         }
+
+        if (!runwayForLanding.is_busy() && !runwayForTakeoff.is_busy() && !takeoffQueue.empty())
+        {
+            unsigned int next = takeoffQueue.front();
+            takeoffQueue.pop();
+            takeoffPlanes.next_number(i-next);
+
+            runwayForTakeoff.start_using();
+        }
+
+        runwayForLanding.one_minute();
+        runwayForTakeoff.one_minute();
     }
 
+    cout << endl;
+    cout << "-----------------------------------OUTPUT-----------------------------------------" << endl;
+    cout << "The number of planes that took off in the simulated time: "
+    << takeoffPlanes.how_many_numbers() << endl;
+    cout << "The number of planes that landed in the simulated time: "
+    << landingPlanes.how_many_numbers() << endl;
+    cout << "The number of planes that crashed because the ran out of fuel before they"
+            "could land: " << planesCrashed << endl;
+    cout << "The average time that a plane spent in the takeoff queue: "
+    << takeoffPlanes.average() << endl;
+    cout << "The average time that a plane spent in the landing queue: "
+    << landingPlanes.average() << endl;
 
     return 0;
 }
