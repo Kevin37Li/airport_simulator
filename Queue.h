@@ -9,7 +9,7 @@ template <class T>
 class Queue{
 public:
     typedef size_t size_type;
-    static const size_type  CAPACITY = 30;
+    static const size_type  CAPACITY = 100;
 
     // constructor
     Queue();
