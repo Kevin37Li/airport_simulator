@@ -15,7 +15,7 @@ void Queue<T>::pop() {
 
 template<class T>
 void Queue<T>::push(const T &entry) {
-    assert(size() <= CAPACITY);
+    assert(size() < CAPACITY);
 
     _last = next_index(_last);
     data[_last] = entry;
