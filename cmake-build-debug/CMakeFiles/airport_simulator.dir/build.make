@@ -69,34 +69,79 @@ CMakeFiles/airport_simulator.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/airport_simulator.dir/main.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\kevin\CS_8\airport_simulator\main.cpp -o CMakeFiles\airport_simulator.dir\main.cpp.s
 
-CMakeFiles/airport_simulator.dir/queue.cpp.obj: CMakeFiles/airport_simulator.dir/flags.make
-CMakeFiles/airport_simulator.dir/queue.cpp.obj: ../queue.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\kevin\CS_8\airport_simulator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/airport_simulator.dir/queue.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\airport_simulator.dir\queue.cpp.obj -c C:\Users\kevin\CS_8\airport_simulator\queue.cpp
+CMakeFiles/airport_simulator.dir/Queue.cpp.obj: CMakeFiles/airport_simulator.dir/flags.make
+CMakeFiles/airport_simulator.dir/Queue.cpp.obj: ../Queue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\kevin\CS_8\airport_simulator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/airport_simulator.dir/Queue.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\airport_simulator.dir\Queue.cpp.obj -c C:\Users\kevin\CS_8\airport_simulator\Queue.cpp
 
-CMakeFiles/airport_simulator.dir/queue.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/airport_simulator.dir/queue.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\kevin\CS_8\airport_simulator\queue.cpp > CMakeFiles\airport_simulator.dir\queue.cpp.i
+CMakeFiles/airport_simulator.dir/Queue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/airport_simulator.dir/Queue.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\kevin\CS_8\airport_simulator\Queue.cpp > CMakeFiles\airport_simulator.dir\Queue.cpp.i
 
-CMakeFiles/airport_simulator.dir/queue.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/airport_simulator.dir/queue.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\kevin\CS_8\airport_simulator\queue.cpp -o CMakeFiles\airport_simulator.dir\queue.cpp.s
+CMakeFiles/airport_simulator.dir/Queue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/airport_simulator.dir/Queue.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\kevin\CS_8\airport_simulator\Queue.cpp -o CMakeFiles\airport_simulator.dir\Queue.cpp.s
+
+CMakeFiles/airport_simulator.dir/boolSource.cpp.obj: CMakeFiles/airport_simulator.dir/flags.make
+CMakeFiles/airport_simulator.dir/boolSource.cpp.obj: ../boolSource.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\kevin\CS_8\airport_simulator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/airport_simulator.dir/boolSource.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\airport_simulator.dir\boolSource.cpp.obj -c C:\Users\kevin\CS_8\airport_simulator\boolSource.cpp
+
+CMakeFiles/airport_simulator.dir/boolSource.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/airport_simulator.dir/boolSource.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\kevin\CS_8\airport_simulator\boolSource.cpp > CMakeFiles\airport_simulator.dir\boolSource.cpp.i
+
+CMakeFiles/airport_simulator.dir/boolSource.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/airport_simulator.dir/boolSource.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\kevin\CS_8\airport_simulator\boolSource.cpp -o CMakeFiles\airport_simulator.dir\boolSource.cpp.s
+
+CMakeFiles/airport_simulator.dir/averager.cpp.obj: CMakeFiles/airport_simulator.dir/flags.make
+CMakeFiles/airport_simulator.dir/averager.cpp.obj: ../averager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\kevin\CS_8\airport_simulator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/airport_simulator.dir/averager.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\airport_simulator.dir\averager.cpp.obj -c C:\Users\kevin\CS_8\airport_simulator\averager.cpp
+
+CMakeFiles/airport_simulator.dir/averager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/airport_simulator.dir/averager.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\kevin\CS_8\airport_simulator\averager.cpp > CMakeFiles\airport_simulator.dir\averager.cpp.i
+
+CMakeFiles/airport_simulator.dir/averager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/airport_simulator.dir/averager.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\kevin\CS_8\airport_simulator\averager.cpp -o CMakeFiles\airport_simulator.dir\averager.cpp.s
+
+CMakeFiles/airport_simulator.dir/runway.cpp.obj: CMakeFiles/airport_simulator.dir/flags.make
+CMakeFiles/airport_simulator.dir/runway.cpp.obj: ../runway.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\kevin\CS_8\airport_simulator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/airport_simulator.dir/runway.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\airport_simulator.dir\runway.cpp.obj -c C:\Users\kevin\CS_8\airport_simulator\runway.cpp
+
+CMakeFiles/airport_simulator.dir/runway.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/airport_simulator.dir/runway.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\kevin\CS_8\airport_simulator\runway.cpp > CMakeFiles\airport_simulator.dir\runway.cpp.i
+
+CMakeFiles/airport_simulator.dir/runway.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/airport_simulator.dir/runway.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\kevin\CS_8\airport_simulator\runway.cpp -o CMakeFiles\airport_simulator.dir\runway.cpp.s
 
 # Object files for target airport_simulator
 airport_simulator_OBJECTS = \
 "CMakeFiles/airport_simulator.dir/main.cpp.obj" \
-"CMakeFiles/airport_simulator.dir/queue.cpp.obj"
+"CMakeFiles/airport_simulator.dir/Queue.cpp.obj" \
+"CMakeFiles/airport_simulator.dir/boolSource.cpp.obj" \
+"CMakeFiles/airport_simulator.dir/averager.cpp.obj" \
+"CMakeFiles/airport_simulator.dir/runway.cpp.obj"
 
 # External object files for target airport_simulator
 airport_simulator_EXTERNAL_OBJECTS =
 
 airport_simulator.exe: CMakeFiles/airport_simulator.dir/main.cpp.obj
-airport_simulator.exe: CMakeFiles/airport_simulator.dir/queue.cpp.obj
+airport_simulator.exe: CMakeFiles/airport_simulator.dir/Queue.cpp.obj
+airport_simulator.exe: CMakeFiles/airport_simulator.dir/boolSource.cpp.obj
+airport_simulator.exe: CMakeFiles/airport_simulator.dir/averager.cpp.obj
+airport_simulator.exe: CMakeFiles/airport_simulator.dir/runway.cpp.obj
 airport_simulator.exe: CMakeFiles/airport_simulator.dir/build.make
 airport_simulator.exe: CMakeFiles/airport_simulator.dir/linklibs.rsp
 airport_simulator.exe: CMakeFiles/airport_simulator.dir/objects1.rsp
 airport_simulator.exe: CMakeFiles/airport_simulator.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\kevin\CS_8\airport_simulator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable airport_simulator.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\kevin\CS_8\airport_simulator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable airport_simulator.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\airport_simulator.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

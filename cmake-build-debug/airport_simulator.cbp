@@ -80,13 +80,31 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/kevin/CS_8/airport_simulator/Queue.cpp">
+			<Option target="airport_simulator"/>
+		</Unit>
+		<Unit filename="C:/Users/kevin/CS_8/airport_simulator/Queue.h">
+			<Option target="airport_simulator"/>
+		</Unit>
+		<Unit filename="C:/Users/kevin/CS_8/airport_simulator/averager.cpp">
+			<Option target="airport_simulator"/>
+		</Unit>
+		<Unit filename="C:/Users/kevin/CS_8/airport_simulator/averager.h">
+			<Option target="airport_simulator"/>
+		</Unit>
+		<Unit filename="C:/Users/kevin/CS_8/airport_simulator/boolSource.cpp">
+			<Option target="airport_simulator"/>
+		</Unit>
+		<Unit filename="C:/Users/kevin/CS_8/airport_simulator/boolSource.h">
+			<Option target="airport_simulator"/>
+		</Unit>
 		<Unit filename="C:/Users/kevin/CS_8/airport_simulator/main.cpp">
 			<Option target="airport_simulator"/>
 		</Unit>
-		<Unit filename="C:/Users/kevin/CS_8/airport_simulator/queue.cpp">
+		<Unit filename="C:/Users/kevin/CS_8/airport_simulator/runway.cpp">
 			<Option target="airport_simulator"/>
 		</Unit>
-		<Unit filename="C:/Users/kevin/CS_8/airport_simulator/queue.h">
+		<Unit filename="C:/Users/kevin/CS_8/airport_simulator/runway.h">
 			<Option target="airport_simulator"/>
 		</Unit>
 		<Unit filename="C:/Users/kevin/CS_8/airport_simulator/CMakeLists.txt">

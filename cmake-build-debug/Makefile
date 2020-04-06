@@ -122,6 +122,87 @@ airport_simulator/fast:
 	$(MAKE) -f CMakeFiles\airport_simulator.dir\build.make CMakeFiles/airport_simulator.dir/build
 .PHONY : airport_simulator/fast
 
+Queue.obj: Queue.cpp.obj
+
+.PHONY : Queue.obj
+
+# target to build an object file
+Queue.cpp.obj:
+	$(MAKE) -f CMakeFiles\airport_simulator.dir\build.make CMakeFiles/airport_simulator.dir/Queue.cpp.obj
+.PHONY : Queue.cpp.obj
+
+Queue.i: Queue.cpp.i
+
+.PHONY : Queue.i
+
+# target to preprocess a source file
+Queue.cpp.i:
+	$(MAKE) -f CMakeFiles\airport_simulator.dir\build.make CMakeFiles/airport_simulator.dir/Queue.cpp.i
+.PHONY : Queue.cpp.i
+
+Queue.s: Queue.cpp.s
+
+.PHONY : Queue.s
+
+# target to generate assembly for a file
+Queue.cpp.s:
+	$(MAKE) -f CMakeFiles\airport_simulator.dir\build.make CMakeFiles/airport_simulator.dir/Queue.cpp.s
+.PHONY : Queue.cpp.s
+
+averager.obj: averager.cpp.obj
+
+.PHONY : averager.obj
+
+# target to build an object file
+averager.cpp.obj:
+	$(MAKE) -f CMakeFiles\airport_simulator.dir\build.make CMakeFiles/airport_simulator.dir/averager.cpp.obj
+.PHONY : averager.cpp.obj
+
+averager.i: averager.cpp.i
+
+.PHONY : averager.i
+
+# target to preprocess a source file
+averager.cpp.i:
+	$(MAKE) -f CMakeFiles\airport_simulator.dir\build.make CMakeFiles/airport_simulator.dir/averager.cpp.i
+.PHONY : averager.cpp.i
+
+averager.s: averager.cpp.s
+
+.PHONY : averager.s
+
+# target to generate assembly for a file
+averager.cpp.s:
+	$(MAKE) -f CMakeFiles\airport_simulator.dir\build.make CMakeFiles/airport_simulator.dir/averager.cpp.s
+.PHONY : averager.cpp.s
+
+boolSource.obj: boolSource.cpp.obj
+
+.PHONY : boolSource.obj
+
+# target to build an object file
+boolSource.cpp.obj:
+	$(MAKE) -f CMakeFiles\airport_simulator.dir\build.make CMakeFiles/airport_simulator.dir/boolSource.cpp.obj
+.PHONY : boolSource.cpp.obj
+
+boolSource.i: boolSource.cpp.i
+
+.PHONY : boolSource.i
+
+# target to preprocess a source file
+boolSource.cpp.i:
+	$(MAKE) -f CMakeFiles\airport_simulator.dir\build.make CMakeFiles/airport_simulator.dir/boolSource.cpp.i
+.PHONY : boolSource.cpp.i
+
+boolSource.s: boolSource.cpp.s
+
+.PHONY : boolSource.s
+
+# target to generate assembly for a file
+boolSource.cpp.s:
+	$(MAKE) -f CMakeFiles\airport_simulator.dir\build.make CMakeFiles/airport_simulator.dir/boolSource.cpp.s
+.PHONY : boolSource.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -149,32 +230,32 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\airport_simulator.dir\build.make CMakeFiles/airport_simulator.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-queue.obj: queue.cpp.obj
+runway.obj: runway.cpp.obj
 
-.PHONY : queue.obj
+.PHONY : runway.obj
 
 # target to build an object file
-queue.cpp.obj:
-	$(MAKE) -f CMakeFiles\airport_simulator.dir\build.make CMakeFiles/airport_simulator.dir/queue.cpp.obj
-.PHONY : queue.cpp.obj
+runway.cpp.obj:
+	$(MAKE) -f CMakeFiles\airport_simulator.dir\build.make CMakeFiles/airport_simulator.dir/runway.cpp.obj
+.PHONY : runway.cpp.obj
 
-queue.i: queue.cpp.i
+runway.i: runway.cpp.i
 
-.PHONY : queue.i
+.PHONY : runway.i
 
 # target to preprocess a source file
-queue.cpp.i:
-	$(MAKE) -f CMakeFiles\airport_simulator.dir\build.make CMakeFiles/airport_simulator.dir/queue.cpp.i
-.PHONY : queue.cpp.i
+runway.cpp.i:
+	$(MAKE) -f CMakeFiles\airport_simulator.dir\build.make CMakeFiles/airport_simulator.dir/runway.cpp.i
+.PHONY : runway.cpp.i
 
-queue.s: queue.cpp.s
+runway.s: runway.cpp.s
 
-.PHONY : queue.s
+.PHONY : runway.s
 
 # target to generate assembly for a file
-queue.cpp.s:
-	$(MAKE) -f CMakeFiles\airport_simulator.dir\build.make CMakeFiles/airport_simulator.dir/queue.cpp.s
-.PHONY : queue.cpp.s
+runway.cpp.s:
+	$(MAKE) -f CMakeFiles\airport_simulator.dir\build.make CMakeFiles/airport_simulator.dir/runway.cpp.s
+.PHONY : runway.cpp.s
 
 # Help Target
 help:
@@ -185,12 +266,21 @@ help:
 	@echo ... rebuild_cache
 	@echo ... airport_simulator
 	@echo ... edit_cache
+	@echo ... Queue.obj
+	@echo ... Queue.i
+	@echo ... Queue.s
+	@echo ... averager.obj
+	@echo ... averager.i
+	@echo ... averager.s
+	@echo ... boolSource.obj
+	@echo ... boolSource.i
+	@echo ... boolSource.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... queue.obj
-	@echo ... queue.i
-	@echo ... queue.s
+	@echo ... runway.obj
+	@echo ... runway.i
+	@echo ... runway.s
 .PHONY : help
 
 
