@@ -6,7 +6,45 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/kevin/CS_8/airport_simulator/Queue.cpp
+Queue.h
+C:/Users/kevin/CS_8/airport_simulator/Queue.h
+cassert
+-
+
+C:/Users/kevin/CS_8/airport_simulator/Queue.h
+iostream
+-
+
+C:/Users/kevin/CS_8/airport_simulator/averager.h
+cstdlib
+-
+cassert
+-
+
+C:/Users/kevin/CS_8/airport_simulator/boolSource.h
+iostream
+-
+cstdlib
+-
+cassert
+-
+
 C:/Users/kevin/CS_8/airport_simulator/main.cpp
 iostream
+-
+Queue.h
+C:/Users/kevin/CS_8/airport_simulator/Queue.h
+Queue.cpp
+C:/Users/kevin/CS_8/airport_simulator/Queue.cpp
+boolSource.h
+C:/Users/kevin/CS_8/airport_simulator/boolSource.h
+averager.h
+C:/Users/kevin/CS_8/airport_simulator/averager.h
+runway.h
+C:/Users/kevin/CS_8/airport_simulator/runway.h
+
+C:/Users/kevin/CS_8/airport_simulator/runway.h
+cassert
 -
 

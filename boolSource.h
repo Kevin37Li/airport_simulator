@@ -20,6 +20,24 @@ private:
     double probability;
 
 };
+/*****************************************************************************
+ * boolSource constructor
+ * ---------------------------------------------------------------------------
+ * The unparametrized constructors for initialzing the member values within the
+ * class
+ * ---------------------------------------------------------------------------
+ * setting up the private member value for class
+ *****************************************************************************/
+
+/*****************************************************************************
+ * query
+ * --------------------------------------------------------------------------
+ * This function returns true or false value based on the probability specified
+ * by the user
+ * ---------------------------------------------------------------------------
+ * RETURN:
+ *  true or false value based on the probability specified by the user
+ *****************************************************************************/
 
 
 #endif //AIRPORT_SIMULATOR_BOOLSOURCE_H

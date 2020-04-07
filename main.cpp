@@ -1,3 +1,11 @@
+/*****************************************************************************
+ * Author     : Weiyuan Li
+ * Assignment : Airport Simulation
+ * Class      : CS 08
+ * Section    : M-TR:9:45 - 11:05
+ * DUE DATE   : 04/05/20
+ ****************************************************************************/
+
 #include <iostream>
 #include "Queue.h"
 #include "Queue.cpp"
@@ -7,6 +15,16 @@
 
 using namespace std;
 
+/*****************************************************************************
+ * isPlaneCrashed
+ * --------------------------------------------------------------------------
+ * check to see if the plane has crashed
+ * ---------------------------------------------------------------------------
+ * INPUTS:
+ *  timeEnteringQueue: the time the plane entered the landing queue
+ *  timeToLand: the time the plane began to land
+ *  maxWaitingTime: the max time a plane can wait in the landing queue before crashing
+ *****************************************************************************/
 bool isPlaneCrashed(unsigned int timeEnteringQueue, unsigned int timeToLand,
         unsigned int maxWaitingTime);
 
@@ -52,49 +70,62 @@ int main() {
 
     size_t planesCrashed = 0;
 
+    // using the for loop to simulate the time
     for(unsigned int i = 1; i <= timeTotal; i++)
     {
+        // check if there are planes coming to the landing queue
         if(isComingToLandingQueue.query())
         {
             landingQueue.push(i);
         }
 
+        // check if there are planes coming into the takeoff queue
         if(isComingToTakeoffQueue.query())
         {
             takeoffQueue.push(i);
         }
 
+        // if the landing queue is not empty and there are planes crashing
         while (!landingQueue.empty() && isPlaneCrashed(landingQueue.front(), i, maxWaitingTime))
         {
+            // remove the crashed planes
             landingQueue.pop();
             planesCrashed++;
         }
 
+        // if there are not plane currently occupying the runway
+        // and the landing queue is not empty, ready to land a plane
         if(!runwayForLanding.is_busy() && !runwayForTakeoff.is_busy() && !landingQueue.empty())
         {
             unsigned int next = landingQueue.front();
             landingQueue.pop();
             landingPlanes.next_number(i-next);
 
+            // start using the runway for landing
             runwayForLanding.start_using();
         }
 
+        // check if the landing queue is empty or not
         if(!landingQueue.empty())
         {
+            // recorded one minute for runway either in use of takeoff or landing
             runwayForLanding.one_minute();
             runwayForTakeoff.one_minute();
             continue;
         }
 
+        // check if the runway is currently occupied and if the take off queue is empty
         if (!runwayForLanding.is_busy() && !runwayForTakeoff.is_busy() && !takeoffQueue.empty())
         {
             unsigned int next = takeoffQueue.front();
             takeoffQueue.pop();
             takeoffPlanes.next_number(i-next);
 
+            // start using the runway for takeoff
             runwayForTakeoff.start_using();
         }
 
+        // recorded one minute for runway either in use of takeoff or landing
         runwayForLanding.one_minute();
         runwayForTakeoff.one_minute();
     }
@@ -115,7 +146,16 @@ int main() {
     return 0;
 }
 
-
+/*****************************************************************************
+ * isPlaneCrashed
+ * --------------------------------------------------------------------------
+ * check to see if the plane has crashed
+ * ---------------------------------------------------------------------------
+ * INPUTS:
+ *  timeEnteringQueue: the time the plane entered the landing queue
+ *  timeToLand: the time the plane began to land
+ *  maxWaitingTime: the max time a plane can wait in the landing queue before crashing
+ *****************************************************************************/
 bool isPlaneCrashed(unsigned int timeEnteringQueue, unsigned int timeToLand,
                     unsigned int maxWaitingTime)
 {
